@@ -1,32 +1,46 @@
-/* Global body styling */
+/* Force full dark background and gray text */
 body {
-  background-color: #121212;
-  color: #f0f0f0;
+  background-color: #000000 !important;
+  color: #cccccc !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Header and nav styling */
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
+/* Override Bootstrap container background */
+.container {
+  background-color: #000000 !important;
+  color: #cccccc !important;
 }
 
-.nav-link {
-  color: #ccc !important;
+/* Navbar links */
+.navbar-dark .navbar-nav .nav-link {
+  color: #bbbbbb;
 }
 
-.nav-link:hover {
-  color: #ffffff !important;
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff;
   text-decoration: underline;
 }
 
-/* Main content sections */
-.container h1, .container h2 {
+/* Buttons */
+.btn-primary {
+  background-color: #333333;
+  border: 1px solid #888888;
   color: #ffffff;
 }
 
+.btn-primary:hover {
+  background-color: #555555;
+  border-color: #aaaaaa;
+}
+
+/* Headings */
+h1, h2 {
+  color: #ffffff;
+}
+
+/* List styling */
 ul {
   list-style: square;
   padding-left: 20px;
@@ -36,21 +50,11 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
-/* Buttons */
-.btn-primary {
-  background-color: #0077cc;
-  border: none;
+/* Links (e.g. email) */
+a {
+  color: #88c0d0;
 }
 
-.btn-primary:hover {
-  background-color: #005fa3;
-}
-
-/* Footer if added later */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #aaa;
-  background-color: #1f1f1f;
-  margin-top: 40px;
+a:hover {
+  color: #a3d5ff;
 }
