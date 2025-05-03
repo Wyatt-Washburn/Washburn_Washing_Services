@@ -1,53 +1,56 @@
+/* Global body styling */
 body {
-  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f3f9ff;
-  color: #333;
 }
 
-header {
+/* Header and nav styling */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #ccc !important;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* Main content sections */
+.container h1, .container h2 {
+  color: #ffffff;
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn-primary {
   background-color: #0077cc;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.intro {
-  text-align: center;
-  padding: 50px;
-}
-
-.intro h2 {
-  color: #0077cc;
-}
-
-button {
-  background-color: #0077cc;
-  color: white;
-  padding: 10px 20px;
   border: none;
-  cursor: pointer;
 }
 
+.btn-primary:hover {
+  background-color: #005fa3;
+}
+
+/* Footer if added later */
 footer {
-  background-color: #eee;
   text-align: center;
-  padding: 15px;
-  margin-top: 50px;
+  padding: 20px;
+  color: #aaa;
+  background-color: #1f1f1f;
+  margin-top: 40px;
 }
